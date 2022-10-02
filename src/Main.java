@@ -18,7 +18,7 @@ public class Main {
         System.out.println("--------------------");
         System.out.println(group.getCountByAge());
         System.out.println("--------------------");
-        System.out.println(group.getByMinScore(4.8));
+        System.out.println(group.getByMinScore(4.1));
         System.out.println("--------------------");
         group.printInfo();
 
