@@ -43,13 +43,13 @@ public class Group {
     }
 
     public List<Student> getByMinScore(double score) {
-        ArrayList<Student> out = new ArrayList<>();
+        ArrayList<Student> minScore = new ArrayList<>();
         for(Student student : this.students) {
             if (student.averageScore >= score) {
                 System.out.println(student);
             }
         }
-        return out;
+        return minScore;
     }
 
     public void printInfo() {
