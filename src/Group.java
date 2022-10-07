@@ -45,7 +45,7 @@ public class Group {
     public List<Student> getByMinScore(double score) {
         ArrayList<Student> minScore = new ArrayList<>();
         for(Student student : this.students) {
-            if (student.averageScore >= score) {
+            if (score <= student.averageScore) {
                 System.out.println(student);
             }
         }
