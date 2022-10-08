@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Student {
     protected int number;
     protected String name;
@@ -19,5 +21,8 @@ public class Student {
                         "Возраст: %s \n" + "Средний балл: %s \n%n", this.number,
                 this.name, this.lastName, this.age, this.averageScore);
     }
-
+    @Override
+    public String toString() {
+        return this.name + " "+ this.lastName;
+    }
 }

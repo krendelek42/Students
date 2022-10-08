@@ -30,7 +30,11 @@ public class Group {
     }
 
     public List<Student> getAll() {
-        return this.students;
+        List<Student> studentList = new ArrayList<>();
+        for (Student student : this.students) {
+            System.out.println(student);
+        }
+        return studentList;
     }
 
     public Map<Integer, Integer> getCountByAge() {
@@ -53,12 +57,13 @@ public class Group {
     }
 
     public void printInfo() {
-        System.out.printf("Группа: %s%n", this.groupNumber);
+        System.out.printf("Группа: " + this.groupNumber);
         for(Student student: this.students) {
             student.printInfo(student);
-            System.out.println("");
         }
 
     }
+
+
 
 }
