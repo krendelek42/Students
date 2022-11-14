@@ -15,7 +15,7 @@ public class Student {
         this.averageScore = averageScore;
     }
 
-    public void printInfo (Student student) {
+    public void printInfo () {
         System.out.printf("Номер зачетной книжки: %s \n" +
                 "Имя: %s \n" + "Фамилия: %s \n" + 
                         "Возраст: %s \n" + "Средний балл: %s \n%n", this.number,
